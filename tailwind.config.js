@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {},
@@ -10,5 +11,5 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/line-clamp'),
-  ],
+  ]}
 }

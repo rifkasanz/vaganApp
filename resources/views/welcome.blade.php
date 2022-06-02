@@ -120,7 +120,7 @@
 
         <!-- categories -->
         <div class="flex items-start justify-center w-1/4">
-            <ul role="list" class="sticky top-0 mt-3 grid grid-cols-1 gap-2">
+            <ul role="list" class="sticky top-0 mt-3 grid grid-cols-1 gap-2 pt-5">
                 <li class="col-span-1 flex flex-shrink-0 shadow-sm">
                     <div
                         class="flex-1 flex items-center justify-between  border border-gray-200 bg-white rounded-md overflow-hidden">

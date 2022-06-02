@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\RecipeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::controller(RecipeController::class)->group(function () {
+	Route::get('/Recipes', 'index');
+	Route::get('/Recipes/{Recipe}', 'show');
+	Route::get('/Recipes', 'store');
 });
