@@ -3,95 +3,94 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="/dist/output.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
         <title>Recipe Shift</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
     <body class="antialiased h-screen">
-    <nav class="bg-gray-800">
-        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-          <div class="relative flex items-center justify-between h-16">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <!-- Mobile menu button-->
-              <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                <!--
-                  Icon when menu is closed.
+        <nav class="bg-gray-800">
+            <div class="max-w-8xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+                <div class="absolute left-0 flex items-center sm:hidden">
+                <!-- Mobile menu button-->
+                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <!--
+                    Icon when menu is closed.
 
-                  Heroicon name: outline/menu
+                    Heroicon name: outline/menu
 
-                  Menu open: "hidden", Menu closed: "block"
-                -->
-                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-                <!--
-                  Icon when menu is open.
+                    Menu open: "hidden", Menu closed: "block"
+                    -->
+                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <!--
+                    Icon when menu is open.
 
-                  Heroicon name: outline/x
+                    Heroicon name: outline/x
 
-                  Menu open: "block", Menu closed: "hidden"
-                -->
-                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <div class="flex flex-1 items-center justify-center ml-8 sm:items-stretch lg:ml-0">
-              <div class="flex-shrink-0 flex items-center text-white font-semibold text-lg">
-                  <img class="h-6 w-6 m-2" src="/src/img/cooking (1).png"/>
-                Recipe Shift
-              </div>
-              <div class="hidden sm:block sm:ml-6">
-                <div class="flex space-x-4">
-                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                  <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
+                    Menu open: "block", Menu closed: "hidden"
+                   -->
 
-                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Food Inspiration</a>
-
-                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
                 </div>
-              </div>
-              <div class="flex-1 flex justify-end px-2">
-                <div class=" w-full lg:max-w-xs">
-                  <label for="search" class="sr-only">Search</label>
-                  <div class="relative">
-                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                      <!-- Heroicon name: solid/search -->
-                      <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-                      </svg>
+                <div class="flex flex-1 items-center justify-center ml-8 sm:items-stretch lg:ml-0">
+                <div class="flex-shrink-0 flex items-center text-white font-semibold text-lg">
+                    <img class="h-6 w-6 m-2" src="\images\cooking (1).png"/>
+                    Recipe Shift
+                </div>
+                <div class="hidden sm:block sm:ml-6">
+                    <div class="flex space-x-4">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
+
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Food Inspiration</a>
+
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
                     </div>
-                    <input id="search" name="search" class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-gray-700 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm" placeholder="Search" type="search">
-                  </div>
                 </div>
-              </div>
+                <div class="flex-1 flex justify-end px-2">
+                    <div class=" w-full lg:max-w-xs">
+                    <label for="search" class="sr-only">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <!-- Heroicon name: solid/search -->
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        <input id="search" name="search" class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-gray-700 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm" placeholder="Search" type="search">
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
             </div>
 
-          </div>
-        </div>
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="sm:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
 
-        <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden" id="mobile-menu">
-          <div class="px-2 pt-2 pb-3 space-y-1">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Food Inspiration</a>
 
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Food Inspiration</a>
-
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About Us</a>
-          </div>
-        </div>
-    </nav>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+            </div>
+            </div>
+        </nav>
       <!-- Hero section -->
-      <section class="mt-10 px-2 sm:px-6 flex w-full">
+      <section class="px-2 sm:px-6 flex h-screen">
 
              <!-- Recipe list-->
-        <div class="bg-white">
-            <div class="max-w-2xl mx-auto px-4 sm:py-24 sm:px-6 lg:max-w-7xl grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4 bg-red-500">
-                <div class="relative group bg-blue-500">
+        <div class="w-full bg-white">
+            <div class="max-w-2xl max-w-full py-10 px-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+                <div class="relative group">
                 <div class="aspect-[4/4] rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/src/img/likemeat-3sgNkN4wRWI-unsplash.jpg" class="object-center object-cover">
+                    <img src="\images\likemeat-3sgNkN4wRWI-unsplash.jpg" class="object-center object-cover">
                 </div>
                 <div class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8">
                     <h3>
@@ -101,15 +100,15 @@
                     </a>
                     </h3>
                 </div>
-                <div class="mt-1 text-sm text-gray-500 flex flex-cols-3 justify-between items-center w-full">
+                <div class="mt-2 text-sm text-gray-500 flex flex-cols-3 justify-between items-center w-full">
                     <div class="flex flex-col items-center justify-center">
-                        <div class="flex items-center justify-center"><img class="h-8 w-8 mr-2"src="/src/img/spices.png"/>40 mins</div>
+                        <div class="flex items-center justify-center"><img class="h-8 w-8 mr-2"src="\images\spices.png"/>40 mins</div>
                     </div>
                     <div class="flex flex-col items-center justify-center">
-                        <div class="flex items-center justify-center"><img class="h-8 w-8 mr-2"src="/src/img/saucepan.png"/>5 mins</div>
+                        <div class="flex items-center justify-center"><img class="h-8 w-8 mr-2"src="\images\saucepan.png"/>5 mins</div>
                     </div>
                     <div class="flex flex-col items-center justify-center">
-                        <div class="flex items-center justify-center font-semibold"><img class="h-8 w-8 mr-2"src="/src/img/serve.png"/>45 mins</div>
+                        <div class="flex items-center justify-center font-semibold"><img class="h-8 w-8 mr-2"src="\images\serve.png"/>45 mins</div>
                     </div>
                 </div>
                 </div>
@@ -120,199 +119,224 @@
         </div>
 
         <!-- categories -->
-        <div>
-            <ul role="list" class="w-full bg-blue-500 mt-3 grid grid-cols-1 gap-5">
-            <li class="col-span-1 flex shadow-sm">
-                <div class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-md truncate">
-                <div class="flex px-4 py-2 text-sm truncate">
-                    <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full ">
-                        <img src="/src/img/kathi-roll.png"/>
-                    </div>
-                    <div class="flex flex-col items-left justify-center px-2">
-                        <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Breakfast</a>
-                        <p class="text-gray-500">16 Recipes</p>
-                    </div>
+        <div class="flex items-start justify-center w-1/4">
+            <ul role="list" class="sticky top-0 mt-3 grid grid-cols-1 gap-2">
+                <li class="col-span-1 flex flex-shrink-0 shadow-sm">
+                    <div
+                        class="flex-1 flex items-center justify-between  border border-gray-200 bg-white rounded-md overflow-hidden">
+                        <div class="flex flex-col lg:flex-row px-2 lg:px-4 py-2 lg:space-x-2 text-sm items-center justify-center">
+                            <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full">
+                                <img src="\images\kathi-roll.png" />
+                            </div>
+                            <div class="flex flex-col items-left justify-center">
+                                <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Breakfast</a>
+                                <p class="text-gray-500 hidden lg:flex">16 Recipes</p>
+                            </div>
 
-                </div>
-                <div class="flex-shrink-0 pr-2">
-                    <button type="button" class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
-                    <span class="sr-only">Open options</span>
-                    <!-- Heroicon name: solid/dots-vertical -->
-                        <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </button>
-                </div>
-                </div>
-            </li>
+                        </div>
+                        <div class="hidden lg:flex lg:flex-shrink-0 lg:pr-2">
+                            <button type="button"
+                                class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
+                                <span class="sr-only">Open options</span>
 
-            <li class="col-span-1 flex shadow-sm">
-                <div class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-md truncate">
-                <div class="flex px-4 py-2 text-sm truncate">
-                    <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full ">
-                        <img src="/src/img/penne.png"/>
+                                <!-- Heroicon name: solid/dots-vertical -->
+                                <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="flex flex-col items-left justify-center px-2">
-                        <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Mains</a>
-                        <p class="text-gray-500">14 Recipes</p>
-                    </div>
+                </li>
 
-                </div>
-                <div class="flex-shrink-0 pr-2">
-                    <button type="button" class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
-                    <span class="sr-only">Open options</span>
-                    <!-- Heroicon name: solid/dots-vertical -->
-                        <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </button>
-                </div>
-                </div>
-            </li>
+                <li class="col-span-1 flex flex-shrink-0 shadow-sm">
+                    <div
+                        class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-md overflow-hidden">
+                        <div class="flex flex-col lg:flex-row px-2 lg:px-4 py-2 lg:space-x-2 text-sm items-center">
+                            <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full ">
+                                <img src="\images\penne.png" />
+                            </div>
+                            <div class="flex flex-col items-left justify-center">
+                                <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Mains</a>
+                                <p class="text-gray-500 hidden lg:flex">14 Recipes</p>
+                            </div>
 
-            <li class="col-span-1 flex shadow-sm">
-                <div class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-md truncate">
-                <div class="flex px-4 py-2 text-sm truncate">
-                    <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full ">
-                        <img src="/src/img/nuts.png"/>
+                        </div>
+                        <div class="flex-shrink-0 pr-2">
+                            <button type="button"
+                                class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
+                                <span class="sr-only">Open options</span>
+                                <!-- Heroicon name: solid/dots-vertical -->
+                                <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="flex flex-col items-left justify-center px-2">
-                        <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Snacks</a>
-                        <p class="text-gray-500">16 Recipes</p>
-                    </div>
+                </li>
 
-                </div>
-                <div class="flex-shrink-0 pr-2">
-                    <button type="button" class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
-                    <span class="sr-only">Open options</span>
-                    <!-- Heroicon name: solid/dots-vertical -->
-                        <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </button>
-                </div>
-                </div>
-            </li>
+                <li class="col-span-1 flex flex-shrink-0 shadow-sm">
+                    <div
+                        class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-md overflow-hidden">
+                        <div class="flex flex-col lg:flex-row px-2 lg:px-4 py-2 lg:space-x-2 text-sm items-center">
+                            <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full ">
+                                <img src="\images\nuts.png" />
+                            </div>
+                            <div class="flex flex-col items-left justify-center">
+                                <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Snacks</a>
+                                <p class="hidden lg:flex text-gray-500">16 Recipes</p>
+                            </div>
 
-            <li class="col-span-1 flex shadow-sm">
-                <div class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-md truncate">
-                <div class="flex px-4 py-2 text-sm truncate">
-                    <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full ">
-                        <img src="/src/img/coffee.png"/>
+                        </div>
+                        <div class="hidden lg:flex lg:flex-1 lg:flex-shrink-0 lg:pr-2">
+                            <button type="button"
+                                class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
+                                <span class="sr-only">Open options</span>
+                                <!-- Heroicon name: solid/dots-vertical -->
+                                <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="flex flex-col items-left justify-center px-2">
-                        <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Dessert</a>
-                        <p class="text-gray-500">18 Recipes</p>
-                    </div>
+                </li>
 
-                </div>
-                <div class="flex-shrink-0 pr-2">
-                    <button type="button" class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
-                    <span class="sr-only">Open options</span>
-                    <!-- Heroicon name: solid/dots-vertical -->
-                        <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </button>
-                </div>
-                </div>
-            </li>
+                <li class="col-span-1 flex flex-shrink-0 shadow-sm">
+                    <div
+                        class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-md overflow-hidden">
+                        <div class="flex flex-col lg:flex-row px-2 lg:px-4 py-2 lg:space-x-2 text-sm items-center">
+                            <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full ">
+                                <img src="\images\coffee.png" />
+                            </div>
+                            <div class="flex flex-col items-left justify-center">
+                                <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Dessert</a>
+                                <p class="hidden lg:flex text-gray-500">18 Recipes</p>
+                            </div>
 
-            <li class="col-span-1 flex shadow-sm">
-                <div class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-md truncate">
-                <div class="flex px-4 py-2 text-sm truncate">
-                    <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full ">
-                        <img src="/src/img/miso.png"/>
+                        </div>
+                        <div class="hidden lg:flex lg:flex-1 lg:flex-shrink-0 lg:pr-2">
+                            <button type="button"
+                                class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
+                                <span class="sr-only">Open options</span>
+                                <!-- Heroicon name: solid/dots-vertical -->
+                                <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="flex flex-col items-left justify-center px-2">
-                        <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Soup</a>
-                        <p class="text-gray-500">16 Recipes</p>
-                    </div>
+                </li>
 
-                </div>
-                <div class="flex-shrink-0 pr-2">
-                    <button type="button" class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
-                    <span class="sr-only">Open options</span>
-                    <!-- Heroicon name: solid/dots-vertical -->
-                        <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </button>
-                </div>
-                </div>
-            </li>
+                <li class="col-span-1 flex flex-shrink-0 shadow-sm">
+                    <div
+                        class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-md overflow-hidden">
+                        <div class="flex flex-col lg:flex-row px-2 lg:px-4 py-2 lg:space-x-2 text-sm items-center">
+                            <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full ">
+                                <img src="\images\miso.png" />
+                            </div>
+                            <div class="flex flex-col items-left justify-center">
+                                <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Soup</a>
+                                <p class="hidden lg:flex text-gray-500">16 Recipes</p>
+                            </div>
 
-            <li class="col-span-1 flex shadow-sm">
-                <div class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-md truncate">
-                <div class="flex px-4 py-2 text-sm truncate">
-                    <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full ">
-                        <img src="/src/img/salad (1).png"/>
+                        </div>
+                        <div class="hidden lg:flex lg:flex-1 lg:flex-shrink-0 lg:pr-2">
+                            <button type="button"
+                                class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
+                                <span class="sr-only">Open options</span>
+                                <!-- Heroicon name: solid/dots-vertical -->
+                                <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="flex flex-col items-left justify-center px-2">
-                        <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Salad</a>
-                        <p class="text-gray-500">16 Recipes</p>
-                    </div>
+                </li>
 
-                </div>
-                <div class="flex-shrink-0 pr-2">
-                    <button type="button" class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
-                    <span class="sr-only">Open options</span>
-                    <!-- Heroicon name: solid/dots-vertical -->
-                        <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </button>
-                </div>
-                </div>
-            </li>
+                <li class="col-span-1 flex flex-shrink-0 shadow-sm">
+                    <div
+                        class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-md overflow-hidden ">
+                        <div class="flex flex-col lg:flex-row px-2 lg:px-4 py-2 lg:space-x-2 text-sm items-center">
+                            <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full ">
+                                <img src="\images\salad (1).png" />
+                            </div>
+                            <div class="flex flex-col items-left justify-center">
+                                <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Salad</a>
+                                <p class="hidden lg:flex text-gray-500">16 Recipes</p>
+                            </div>
 
-            <li class="col-span-1 flex shadow-sm">
-                <div class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-md truncate">
-                <div class="flex px-4 py-2 text-sm truncate">
-                    <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full ">
-                        <img src="/src/img/tea.png"/>
+                        </div>
+                        <div class="hidden lg:flex lg:flex-1 lg:flex-shrink-0 lg:pr-2">
+                            <button type="button"
+                                class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
+                                <span class="sr-only">Open options</span>
+                                <!-- Heroicon name: solid/dots-vertical -->
+                                <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="flex flex-col items-left justify-center px-2">
-                        <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Drinks</a>
-                        <p class="text-gray-500">16 Recipes</p>
-                    </div>
+                </li>
 
-                </div>
-                <div class="flex-shrink-0 pr-2">
-                    <button type="button" class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
-                    <span class="sr-only">Open options</span>
-                    <!-- Heroicon name: solid/dots-vertical -->
-                        <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </button>
-                </div>
-                </div>
-            </li>
+                <li class="col-span-1 flex flex-shrink-0 shadow-sm">
+                    <div
+                        class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-md overflow-hidden">
+                        <div class="flex flex-col lg:flex-row px-2 lg:px-4 py-2 lg:space-x-2 text-sm items-center">
+                            <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full ">
+                                <img src="\images\tea.png" />
+                            </div>
+                            <div class="flex flex-col items-left justify-center">
+                                <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Drinks</a>
+                                <p class="hidden lg:flex text-gray-500">16 Recipes</p>
+                            </div>
 
-            <li class="col-span-1 flex shadow-sm">
-                <div class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-md truncate">
-                <div class="flex px-4 py-2 text-sm truncate">
-                    <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full ">
-                        <img src="/src/img/trophy.png"/>
+                        </div>
+                        <div class="hidden lg:flex lg:flex-1 lg:flex-shrink-0 lg:pr-2">
+                            <button type="button"
+                                class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
+                                <span class="sr-only">Open options</span>
+                                <!-- Heroicon name: solid/dots-vertical -->
+                                <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="flex flex-col items-left justify-center px-2">
-                        <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Greatest Hits</a>
-                        <p class="text-gray-500">16 Recipes</p>
-                    </div>
+                </li>
 
-                </div>
-                <div class="flex-shrink-0 pr-2">
-                    <button type="button" class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
-                    <span class="sr-only">Open options</span>
-                    <!-- Heroicon name: solid/dots-vertical -->
-                        <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </button>
-                </div>
-                </div>
-            </li>
+                <li class="col-span-1 flex flex-shrink-0 shadow-sm">
+                    <div
+                        class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-md overflow-hidden">
+                        <div class="flex flex-col lg:flex-row px-2 lg:px-4 py-2 lg:space-x-2 text-sm items-center">
+                            <div class="flex-shrink-0 flex items-center justify-center w-16 rounded-full ">
+                                <img src="\images\trophy.png" />
+                            </div>
+                            <div class="flex flex-col w-full items-left justify-center">
+                                <a href="#" class="text-gray-900 font-medium hover:text-gray-600">Big Hits</a>
+                                <p class="hidden lg:flex text-gray-500">16 Recipes</p>
+                            </div>
+
+                        </div>
+                        <div class="hidden lg:flex lg:flex-1 lg:flex-shrink-0 lg:pr-2">
+                            <button type="button"
+                                class="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-0">
+                                <span class="sr-only">Open options</span>
+                                <!-- Heroicon name: solid/dots-vertical -->
+                                <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
       </section>
