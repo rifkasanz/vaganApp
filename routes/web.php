@@ -14,7 +14,7 @@ use App\Http\Controllers\RecipeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main');
 });
 
 Route::controller(RecipeController::class)->group(function () {
